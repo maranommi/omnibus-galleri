@@ -11,8 +11,7 @@ body {
   background: white;
   color: black;
 
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -35,7 +34,29 @@ main {
 /* HEADER */
 
 header {
+  width: 100%;
   margin-bottom: 20px;
+}
+
+/* TOPPMENY */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.top-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  opacity: 0.5;
 }
 
 h1 {
@@ -45,6 +66,23 @@ h1 {
   letter-spacing: 4px;
 
   text-align: center;
+}
+
+/* MANIFEST */
+
+.manifest-text {
+  display: none;
+
+  width: 220px;
+
+  margin-top: 20px;
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.manifest-text.show {
+  display: block;
 }
 
 /* BILDE */
@@ -57,9 +95,6 @@ h1 {
 }
 
 .gallery img {
-
-  /* gjør bildet høyt men ikke så høyt at siden må scrolle */
-
   height: 62vh;
 
   width: auto;
@@ -94,12 +129,30 @@ h1 {
   text-align: right;
 }
 
+/* UTSTILLINGER */
+
+.exhibitions-page {
+  width: 100%;
+  max-width: 700px;
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.exhibition .date {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
 /* MOBIL */
 
 @media (max-width: 700px) {
 
   body {
-    overflow: auto;
     height: auto;
   }
 
@@ -121,6 +174,10 @@ h1 {
 
   .column.right {
     text-align: center;
+  }
+
+  .manifest-text {
+    width: 100%;
   }
 
 }
