@@ -35,10 +35,12 @@ main {
 
 header {
   width: 100%;
+  max-width: 900px;
+
   margin-bottom: 20px;
 }
 
-/* TOPPMENY */
+/* NAV */
 
 .top-nav {
   display: flex;
@@ -59,6 +61,8 @@ header {
   opacity: 0.5;
 }
 
+/* TITTEL */
+
 h1 {
   font-size: 14px;
   font-weight: 500;
@@ -66,23 +70,6 @@ h1 {
   letter-spacing: 4px;
 
   text-align: center;
-}
-
-/* MANIFEST */
-
-.manifest-text {
-  display: none;
-
-  width: 220px;
-
-  margin-top: 20px;
-
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-.manifest-text.show {
-  display: block;
 }
 
 /* BILDE */
@@ -129,18 +116,18 @@ h1 {
   text-align: right;
 }
 
-/* UTSTILLINGER */
+/* UNDERSIDER */
 
-.exhibitions-page {
+.page {
   width: 100%;
   max-width: 700px;
 
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.9;
 
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 40px;
 }
 
 .exhibition .date {
@@ -174,10 +161,6 @@ h1 {
 
   .column.right {
     text-align: center;
-  }
-
-  .manifest-text {
-    width: 100%;
   }
 
 }
