@@ -195,3 +195,44 @@ header {
   }
 
 }
+/* HOVER-PLAKATER */
+
+.poster-trigger {
+  display: inline-block;
+}
+
+.poster {
+  position: fixed;
+
+  top: 50%;
+  right: 60px;
+
+  transform: translateY(-50%);
+
+  width: 340px;
+  height: auto;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  z-index: 9999;
+
+  transition: opacity 0.2s ease;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+}
+
+.poster-trigger:hover .poster {
+  opacity: 1;
+}
+
+/* mobil */
+
+@media (max-width: 700px) {
+
+  .poster {
+    display: none;
+  }
+
+}
