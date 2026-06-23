@@ -237,8 +237,12 @@ header {
 
 /* VERKSLISTE */
 
+.gallery {
+  margin-bottom: 18px;
+}
+
 .works-list {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   text-align: center;
 }
 
