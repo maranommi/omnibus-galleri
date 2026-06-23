@@ -237,13 +237,8 @@ header {
 
 /* VERKSLISTE */
 
-.gallery {
-  margin-bottom: 18px;
-}
-
 .works-list {
-  margin-bottom: 40px;
-  text-align: center;
+  margin: 22px 0 50px;
 }
 
 .works-list a {
@@ -251,11 +246,5 @@ header {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px;
-  border-bottom: 1px solid #c40000;
-  padding-bottom: 2px;
-}
-
-.works-list a:hover {
-  opacity: 0.5;
-}
+  text-transform: uppercase;
 }
