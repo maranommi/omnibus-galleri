@@ -84,19 +84,39 @@ header {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 30px;
+  margin-bottom: 18px; /* litt strammere */
 }
 
 .gallery img {
   height: 62vh;
-
   width: auto;
-
   max-width: 100%;
-
   object-fit: contain;
-
   display: block;
+}
+
+/* VERKSLISTE */
+
+.works-list {
+  text-align: center;
+  margin-bottom: 45px; /* viktig luft før info */
+}
+
+.works-list a {
+  color: #b30000;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(179, 0, 0, 0.6);
+  padding-bottom: 2px;
+
+  transition: opacity 0.2s ease;
+}
+
+.works-list a:hover {
+  opacity: 0.5;
 }
 
 /* INFO */
@@ -171,9 +191,7 @@ header {
 
   .info {
     grid-template-columns: 1fr;
-
     gap: 24px;
-
     text-align: center;
   }
 
@@ -195,6 +213,7 @@ header {
   }
 
 }
+
 /* HOVER-PLAKATER */
 
 .poster-trigger {
@@ -235,16 +254,4 @@ header {
     display: none;
   }
 
-/* VERKSLISTE */
-
-.works-list {
-  margin: 22px 0 50px;
-}
-
-.works-list a {
-  color: #c40000;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
